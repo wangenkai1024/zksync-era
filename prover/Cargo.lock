@@ -842,6 +842,20 @@ dependencies = [
 [[package]]
 name = "circuit_definitions"
 version = "0.1.0"
+source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory#d2e3670e0c5115b7cc7cc24e6d3dbdd17a214aad"
+dependencies = [
+ "crossbeam 0.8.2",
+ "derivative",
+ "seq-macro",
+ "serde",
+ "snark_wrapper",
+ "zk_evm 1.4.0",
+ "zkevm_circuits",
+]
+
+[[package]]
+name = "circuit_definitions"
+version = "0.1.0"
 source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=v1.4.0#d2e3670e0c5115b7cc7cc24e6d3dbdd17a214aad"
 dependencies = [
  "crossbeam 0.8.2",
@@ -5378,7 +5392,7 @@ dependencies = [
  "blake2 0.10.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "boojum",
  "boojum-cuda",
- "circuit_definitions",
+ "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=v1.4.0)",
  "cudart",
  "derivative",
  "hex",
@@ -6410,7 +6424,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "bincode",
- "circuit_definitions",
+ "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory)",
  "itertools 0.10.5",
  "once_cell",
  "proptest",
@@ -6421,7 +6435,7 @@ dependencies = [
  "structopt",
  "tracing",
  "vlog",
- "zkevm_test_harness 1.4.0",
+ "zkevm_test_harness 1.4.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory)",
  "zksync_config",
  "zksync_env_config",
  "zksync_prover_fri_types",
@@ -6976,10 +6990,33 @@ dependencies = [
 [[package]]
 name = "zkevm_test_harness"
 version = "1.4.0"
+source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory#d2e3670e0c5115b7cc7cc24e6d3dbdd17a214aad"
+dependencies = [
+ "bincode",
+ "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory)",
+ "codegen 0.2.0",
+ "crossbeam 0.8.2",
+ "derivative",
+ "env_logger 0.9.3",
+ "hex",
+ "rand 0.4.6",
+ "rayon",
+ "serde",
+ "serde_json",
+ "smallvec",
+ "structopt",
+ "test-log",
+ "tracing",
+ "zkevm-assembly",
+]
+
+[[package]]
+name = "zkevm_test_harness"
+version = "1.4.0"
 source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=v1.4.0#d2e3670e0c5115b7cc7cc24e6d3dbdd17a214aad"
 dependencies = [
  "bincode",
- "circuit_definitions",
+ "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=v1.4.0)",
  "codegen 0.2.0",
  "crossbeam 0.8.2",
  "derivative",
@@ -7286,7 +7323,7 @@ dependencies = [
  "tracing",
  "vk_setup_data_generator_server_fri",
  "vlog",
- "zkevm_test_harness 1.4.0",
+ "zkevm_test_harness 1.4.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=v1.4.0)",
  "zksync_config",
  "zksync_dal",
  "zksync_env_config",
@@ -7376,7 +7413,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "async-trait",
- "circuit_definitions",
+ "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=v1.4.0)",
  "ctrlc",
  "futures 0.3.29",
  "local-ip-address",
@@ -7388,7 +7425,7 @@ dependencies = [
  "tracing",
  "vk_setup_data_generator_server_fri",
  "vlog",
- "zkevm_test_harness 1.4.0",
+ "zkevm_test_harness 1.4.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=v1.4.0)",
  "zksync_config",
  "zksync_dal",
  "zksync_env_config",
@@ -7429,7 +7466,7 @@ dependencies = [
 name = "zksync_prover_fri_types"
 version = "0.1.0"
 dependencies = [
- "circuit_definitions",
+ "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory)",
  "serde",
  "zksync_object_store",
  "zksync_types",
@@ -7605,7 +7642,7 @@ dependencies = [
  "anyhow",
  "async-trait",
  "bincode",
- "circuit_definitions",
+ "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory)",
  "const-decoder",
  "ctrlc",
  "futures 0.3.29",
@@ -7622,7 +7659,7 @@ dependencies = [
  "vk_setup_data_generator_server_fri",
  "vlog",
  "zk_evm 1.4.0",
- "zkevm_test_harness 1.4.0",
+ "zkevm_test_harness 1.4.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-measure-memory)",
  "zksync_config",
  "zksync_dal",
  "zksync_env_config",
