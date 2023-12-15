@@ -842,7 +842,7 @@ dependencies = [
 [[package]]
 name = "circuit_definitions"
 version = "0.1.0"
-source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-fix-memory-use#0179fd0470517c2877a263761b29951e733a288a"
+source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-fix-memory-use#7e725edbb7126b4761e09a2505293d5b4cee4be0"
 dependencies = [
  "crossbeam 0.8.2",
  "derivative",
@@ -6990,7 +6990,7 @@ dependencies = [
 [[package]]
 name = "zkevm_test_harness"
 version = "1.4.0"
-source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-fix-memory-use#0179fd0470517c2877a263761b29951e733a288a"
+source = "git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-fix-memory-use#7e725edbb7126b4761e09a2505293d5b4cee4be0"
 dependencies = [
  "bincode",
  "circuit_definitions 0.1.0 (git+https://github.com/matter-labs/era-zkevm_test_harness.git?branch=jms-fix-memory-use)",
