@@ -61,6 +61,8 @@ core/lib/storage/.env
 
 .zcli-config.json
 
+.instances_to_clean
+
 db/
 en_db/
 db-ssd/
