@@ -37,6 +37,7 @@ members = [
     "core/lib/multivm",
     "core/lib/web3_decl",
     "core/lib/test_account",
+    "core/lib/snapshots_applier",
 
     # Test infrastructure
     "core/tests/cross_external_nodes_checker",
