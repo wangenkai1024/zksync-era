@@ -580,7 +580,8 @@ mod tests {
             .collect();
         conn.storage_dal()
             .insert_factory_deps(miniblock_number, &factory_deps)
-            .await;
+            .await
+            .unwrap();
     }
 
     #[tokio::test]
